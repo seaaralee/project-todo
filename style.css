@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+.wrapper{
+    padding: 25px 38px;
+    background: #fff;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.wrapper .title{
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+.wrapper .inputField{
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.wrapper .inputField input{
+    height: 42px;
+    width: 85%;
+    margin-top: 13px;
+    font-size: 16px;
+    padding: 0 13px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+.wrapper .inputField button.btn{
+    width: 45px;
+    height: 85%;
+    margin-top: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wrapper .content ul li{
+    display: flex;
+    margin: 8px 0;
+    color: #333;
+    background: #f1f1f1;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    justify-content: space-between;
+}
+.wrapper .content .pending-text{
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-transform: capitalize;
+
+}
