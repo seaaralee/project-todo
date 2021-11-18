@@ -12,33 +12,13 @@
         <div class="wrapper">
             <h2 class="title"> To - do! Now </h2>
             <div class="inputField">
-                <input type="text" placeholder="Add your task . . .">
-                <button type="submit" class="btn"> <i class="fa fa-plus"> </i></button>
+                <input type="text" id="taskValue" placeholder="Add your task . . .">
+                <button type="submit" id="addBtn" class="btn"> <i class="fa fa-plus"> </i></button>
             </div>
             <div class="content">
                 <ul id="tasks">
-                    <li>
-                        <span class="text"> Upload Indonesian Task </span>
-                        <div class = "icon">
-                            <i class="icon fa fa-edit"></i>
-                            <i class="icon fa fa-trash"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="text"> Read History </span>
-                        <div class = "icon">
-                            <i class="icon fa fa-edit"></i>
-                            <i class="icon fa fa-trash"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="text"> Quiz Math </span>
-                        <div class = "icon">
-                            <i class="icon fa fa-edit"></i>
-                            <i class="icon fa fa-trash"></i>
-                        </div>
-                    </li>
-                    <div class="pending-text"> You have 3 Pending task! </div>
+                    
+
                 </ul>
             </div>
         </div>
@@ -49,7 +29,7 @@
 			// Show Tasks
 			function loadTasks() {
 				$.ajax({
-					url: "show-tasks.php",
+					url: "show-task.php",
 					type: "POST",
 					success: function(data) {
 						$("#tasks").html(data);
